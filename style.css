@@ -1,0 +1,20 @@
+body {
+  background: url("https://th.bing.com/th/id/R.e9e93f431a3a7b03a7542a407e72e041?rik=KTMYHgrUOV9mWw&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fL2sK0lI.jpg&ehk=fDzeFRaFVX%2fkHAqbp2AEOI2ulKRet586KUX8MLDYjW0%3d&risl=&pid=ImgRaw&r=0") center no-repeat;
+  color: white;
+  text-align: center;
+  margin: auto;
+  margin-top: 30vh;
+}
+
+h1 {
+  margin-top: 30vh;
+}
+
+label {
+  font-size: 1.5rem;
+}
+
+#score {
+  display: none;
+  font-size: 5rem;
+}
