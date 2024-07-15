@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Quiz App</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  
+  <div id="start-page">
+    <h1>Quiz App</h1>
+    <p>This is a quiz app that will test your knowledge on a variety of topics.</p>
+    <button id="start-btn" onclick="start()">Start Quiz</button>
+  </div>
+  
+  <form id="quiz">
+    
+    <div id="q1" style="display: none;">
+      <label for="q1">What is the capital of France?</label>
+      <br>
+      <input type="radio" name="q1" value="Berlin"> Berlin</input>
+      <input type="radio" name="q1" value="Madrid"> Madrid</input>
+      <input type="radio" name="q1" value="Paris" id="right" onclick="correct()"> Paris</input>
+      <input type="radio" name="q1" value="Rome"> Rome</input>
+      <br>
+      <button type="button" onclick="next()">Next Question</button>
+    </div>
+
+    <div id="q2" style="display: none;">
+      <label for="q2">Who wrote the play 'Romeo and Juliet'?</label>
+      <br>
+      <input type="radio" name="q2" value="William Shakespeare" id="right" onclick="correct()"> William Shakespeare</input>
+      <input type="radio" name="q2" value="Charles Dickens"> Charles Dickens</input>
+      <input type="radio" name="q2" value="Jane Austen"> Jane Austen</input>
+      <input type="radio" name="q2" value="Mark Twain"> Mark Twain</input>
+      <br>
+      <button type="button" onclick="back()">Previous Question</button>
+      <button type="button" onclick="next()">Next Question</button>
+    </div>
+
+    <div id="q3" style="display: none;">
+      <label for="q3">Which element has the chemical symbol 'O'?</label>
+      <br>
+      <input type="radio" name="q3" value="Gold"> Gold</input>
+      <input type="radio" name="q3" value="Oxygen" id="right" onclick="correct()"> Oxygen</input>
+      <input type="radio" name="q3" value="Osmium"> Osmium</input>
+      <input type="radio" name="q3" value="Silver"> Silver</input>
+      <br>
+      <button type="button" onclick="back()">Previous Question</button>
+      <button type="button" onclick="next()">Next Question</button>
+    </div>
+
+    <div id="q4" style="display: none;">
+      <label for="q4">What is the largest planet in our Solar System?</label>
+      <br>
+      <input type="radio" name="q4" value="Earth"> Earth</input>
+      <input type="radio" name="q4" value="Mars"> Mars</input>
+      <input type="radio" name="q4" value="Jupiter" id="right" onclick="correct()"> Jupiter</input>
+      <input type="radio" name="q4" value="Saturn"> Saturn</input>
+      <br>
+      <button type="button" onclick="back()">Previous Question</button>
+      <button type="button" onclick="next()">Next Question</button>
+    </div>
+
+    <div id="q5" style="display: none;">
+      <label for="q5">Who painted the Mona Lisa?</label>
+      <br>
+      <input type="radio" name="q5" value="Vincent van Gogh"> Vincent van Gogh</input>
+      <input type="radio" name="q5" value="Pablo Picasso"> Pablo Picasso</input>
+      <input type="radio" name="q5" value="Leonardo da Vinci" id="right" onclick="correct()"> Leonardo da Vinci</input>
+      <input type="radio" name="q5" value="Claude Monet"> Claude Monet</input>
+      <br>
+      <button type="button" onclick="back()">Previous Question</button>
+      <button type="button" onclick="next()">Next Question</button>
+    </div>
+
+    <div id="q6" style="display: none;">
+      <label for="q6">Which country is known as the Land of the Rising Sun?</label>
+      <br>
+      <input type="radio" name="q6" value="China"> China</input>
+      <input type="radio" name="q6" value="Japan" id="right" onclick="correct()"> Japan</input>
+      <input type="radio" name="q6" value="Thailand"> Thailand</input>
+      <input type="radio" name="q6" value="South Korea"> South Korea</input>
+      <br>
+      <button type="button" onclick="back()">Previous Question</button>
+      <button type="button" onclick="next()">Next Question</button>
+    </div>
+
+    <div id="q7" style="display: none;">
+      <label for="q7">What is the hardest natural substance on Earth?</label>
+      <br>
+      <input type="radio" name="q7" value="Gold"> Gold</input>
+      <input type="radio" name="q7" value="Iron"> Iron</input>
+      <input type="radio" name="q7" value="Diamond" id="right" onclick="correct()"> Diamond</input>
+      <input type="radio" name="q7" value="Platinum"> Platinum</input>
+      <br>
+      <button type="button" onclick="back()">Previous Question</button>
+      <button type="button" onclick="next()">Next Question</button>
+    </div>
+
+    <div id="q8" style="display: none;">
+      <label for="q8">Who is the author of the Harry Potter series?</label>
+      <br>
+      <input type="radio" name="q8" value="J.R.R. Tolkien"> J.R.R. Tolkien</input>
+      <input type="radio" name="q8" value="J.K. Rowling" id="right" onclick="correct()"> J.K. Rowling</input>
+      <input type="radio" name="q8" value="Stephen King"> Stephen King</input>
+      <input type="radio" name="q8" value="George R.R. Martin"> George R.R. Martin</input>
+      <br>
+      <button type="button" onclick="back()">Previous Question</button>
+      <button type="button" onclick="next()">Next Question</button>
+    </div>
+
+    <div id="q9" style="display: none;">
+      <label for="q9">What is the smallest unit of life?</label>
+      <br>
+      <input type="radio" name="q9" value="Atom"> Atom</input>
+      <input type="radio" name="q9" value="Molecule"> Molecule</input>
+      <input type="radio" name="q9" value="Cell" id="right" onclick="correct()"> Cell</input>
+      <input type="radio" name="q9" value="Organism"> Organism</input>
+      <br>
+      <button type="button" onclick="back()">Previous Question</button>
+      <button type="button" onclick="next()">Next Question</button>
+    </div>
+
+    <div id="q10" style="display: none;">
+      <label for="q10">Which ocean is the largest?</label>
+      <br>
+      <input type="radio" name="q10" value="Atlantic"> Atlantic</input>
+      <input type="radio" name="q10" value="Indian"> Indian</input>
+      <input type="radio" name="q10" value="Arctic"> Arctic</input>
+      <input type="radio" name="q10" value="Pacific" id="right" onclick="correct()"> Pacific</input>
+      <br>
+      <button type="button" onclick="back()">Previous Question</button>
+      <button type="button" onclick="next()">Finish Quiz</button>
+    </div>
+
+  </form>
+  <p id="score">Score: </p>
+  <script src="script.js"></script>
+</body>
+
+</html>
